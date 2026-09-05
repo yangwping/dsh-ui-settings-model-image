@@ -118,7 +118,7 @@ node smoke-test.ts        # Node ≥ 23（原生 TS 类型剥离）
 
 ### 类型检查
 
-`tsconfig.check.json` 中的 `paths` 原本指向 DSH 源码仓库（deepseek-harness）的路径；在其他机器上需要先调整为本地 deepseek-harness checkout 的实际路径，再执行 `tsc -p tsconfig.check.json`。
+`tsconfig.check.json`（仓库根）与 `ui-settings-model-image/tsconfig.build.json` 中的 `paths` 均为**相对路径**，假设 [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 源码仓库与本仓库**同级**存放（`../deepseek-harness`）。布局不同的话请先把这两个文件里的路径调整为你本地的实际位置，再执行 `tsc -p tsconfig.check.json`。
 
 ### 构建
 

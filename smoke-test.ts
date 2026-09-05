@@ -15,7 +15,7 @@ function check(label: string, actual: unknown, expected: unknown): void {
   }
 }
 
-// A namespace view shaped like the user's volcengine route after schema
+// A namespace view shaped like a volcengine-style pi-ai route after schema
 // materialization: rows carry `input: []` (absent → inherit), policy fields
 // carry their schema defaults.
 const view: NamespaceViewShape = {
@@ -23,9 +23,9 @@ const view: NamespaceViewShape = {
   value: {
     providers: {
       volcengine: {
-        displayName: '火山',
+        displayName: 'Ark',
         api: 'openai-responses',
-        baseURL: 'https://ark.cn-beijing.volces.com/api/coding/v3',
+        baseURL: 'https://ark.example.com/api/v3',
         defaultInput: ['text'],
         defaultContextWindow: 262144,
         defaultMaxTokens: 32768,
@@ -42,9 +42,9 @@ const view: NamespaceViewShape = {
   user: {
     providers: {
       volcengine: {
-        displayName: '火山',
+        displayName: 'Ark',
         api: 'openai-responses',
-        baseURL: 'https://ark.cn-beijing.volces.com/api/coding/v3',
+        baseURL: 'https://ark.example.com/api/v3',
         models: [
           { id: 'glm-5.3', name: 'glm-5.3', contextWindow: 1000000 },
           { id: 'glm-5.3-flash', name: 'glm-5.3-flash' },
