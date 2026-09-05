@@ -1,0 +1,7 @@
+# The plugin's own bundle patch: applied as the last composition layer after
+# the profile's bundles (dsh-base, web-app), inserting this package's loader
+# row into the web client graph. The name resolves through the profile
+# directory this bundle is installed into.
+- insert:
+    - id: ui-settings-model-image
+      name: '@deepseek-ai/dsh-client-ui-settings-model-image'

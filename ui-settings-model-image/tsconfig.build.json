@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "target": "es2024",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "lib": [
+      "ES2024",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": false,
+    "skipLibCheck": true,
+    "types": [],
+    "paths": {
+      "react": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/ui-settings-models/node_modules/@types/react/index.d.ts"
+      ],
+      "react/jsx-runtime": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/ui-settings-models/node_modules/@types/react/jsx-runtime.d.ts"
+      ],
+      "@deepseek-ai/cordis": [
+        "/Users/istone/project/ai/deepseek-harness/vendor/cordis/lib/types/index.d.ts"
+      ],
+      "@deepseek-ai/dsh-client-ui-slots": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/ui-slots/lib/types/index.d.ts"
+      ],
+      "@deepseek-ai/dsh-client-ui-settings-models/client": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/ui-settings-models/lib/types/client/index.d.ts"
+      ],
+      "@deepseek-ai/dsh-client-locale/client": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/locale/lib/types/client/index.d.ts"
+      ],
+      "@deepseek-ai/dsh-api-remotes/client": [
+        "/Users/istone/project/ai/deepseek-harness/packages/api/remotes/lib/types/client/index.d.ts"
+      ],
+      "@deepseek-ai/dsh-client-ui-renderer/client": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/ui-renderer/lib/types/client/index.d.ts"
+      ],
+      "@deepseek-ai/dsh-client-ui-primitives": [
+        "/Users/istone/project/ai/deepseek-harness/packages/client/ui-primitives/lib/types/index.d.ts"
+      ]
+    },
+    "rootDir": "src",
+    "outDir": "lib/types",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": [
+    "src"
+  ]
+}
